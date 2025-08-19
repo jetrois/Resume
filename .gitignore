@@ -1,0 +1,18 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
