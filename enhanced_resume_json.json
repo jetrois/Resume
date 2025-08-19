@@ -1,0 +1,205 @@
+{
+  "basics": {
+    "name": "Jetoine Mathurin",
+    "email": "jetrois@pm.me",
+    "phone": "(305) 590-7847",
+    "location": {
+      "city": "Minneapolis",
+      "region": "MN",
+      "country": "USA"
+    },
+    "summary": "Results-driven IT professional with 8+ years of experience delivering enterprise-level systems and network support. Proven expertise in Microsoft ecosystem management, ServiceNow implementations, and federal compliance standards. Specialized in streamlining IT operations through automation and process optimization, with a track record of reducing system deployment times and improving user satisfaction across diverse environments."
+  },
+  "work": [
+    {
+      "name": "Digital Alchemy Labs Inc",
+      "location": "Minneapolis, MN",
+      "position": "IT Consultant",
+      "startDate": "2023-07",
+      "summary": "Led comprehensive IT infrastructure projects including system provisioning, security compliance, and technical support operations for enterprise clients.",
+      "highlights": [
+        "Orchestrated deployment of 150+ Windows systems using Intune and SCCM, achieving 99% success rate",
+        "Executed secure decommissioning procedures following NIST SP 800-88 standards for 200+ devices",
+        "Delivered hybrid on-site and remote support, maintaining 95% client satisfaction rating",
+        "Streamlined incident management workflows through ServiceNow optimization, reducing resolution time by 30%"
+      ]
+    },
+    {
+      "name": "Target Corporation",
+      "location": "Brooklyn Park, MN",
+      "position": "POS/Mobility Technical Support",
+      "startDate": "2022-12",
+      "endDate": "2023-06",
+      "summary": "Provided critical technical support for point-of-sale systems and mobile devices across retail operations, ensuring minimal downtime during peak business periods.",
+      "highlights": [
+        "Resolved 95% of ServiceNow incidents within SLA timeframes, supporting 500+ retail devices",
+        "Performed comprehensive diagnostics and assessments, reducing device replacement costs by 25%",
+        "Developed troubleshooting documentation that decreased average ticket resolution time by 40%"
+      ]
+    },
+    {
+      "name": "Perkins & Will",
+      "location": "Minneapolis, MN",
+      "position": "Technology Integration Analyst",
+      "startDate": "2022-06",
+      "endDate": "2022-09",
+      "summary": "Managed technology integration projects for architectural firm, focusing on AV systems, workstation deployment, and process documentation.",
+      "highlights": [
+        "Deployed and configured 80+ workstations with standardized imaging protocols",
+        "Integrated AV systems across 12 conference rooms, improving collaboration efficiency by 35%",
+        "Created comprehensive ServiceNow documentation workflows, reducing onboarding time for new technicians by 50%"
+      ]
+    },
+    {
+      "name": "Medica",
+      "location": "Minnetonka, MN",
+      "position": "Technical Support Analyst",
+      "startDate": "2021-11",
+      "endDate": "2022-03",
+      "summary": "Supported critical healthcare IT infrastructure including Windows/Linux environments, Microsoft 365, and Active Directory services while maintaining HIPAA compliance.",
+      "highlights": [
+        "Successfully led Skype for Business to Microsoft Teams migration for 1,200+ users with zero data loss",
+        "Maintained 99.8% system uptime across hybrid Windows/Linux environments",
+        "Streamlined Active Directory user provisioning processes, reducing account creation time by 60%",
+        "Ensured HIPAA compliance across all technical support activities"
+      ]
+    },
+    {
+      "name": "Comm-Works",
+      "location": "Plymouth, MN",
+      "position": "Logistics Project Coordinator",
+      "startDate": "2019-08",
+      "endDate": "2021-11",
+      "summary": "Coordinated large-scale hardware deployment projects and logistics operations while maintaining detailed project tracking and documentation.",
+      "highlights": [
+        "Configured and deployed 300+ POS systems and Cisco networking equipment across multiple locations",
+        "Managed project timelines through ServiceNow, achieving 98% on-time delivery rate",
+        "Created standardized configuration procedures, reducing setup time per device by 45%",
+        "Coordinated cross-functional teams to ensure seamless hardware rollouts"
+      ]
+    },
+    {
+      "name": "DRC",
+      "location": "Plymouth, MN",
+      "position": "Technical Support Analyst",
+      "startDate": "2018-09",
+      "endDate": "2019-05",
+      "summary": "Delivered multi-platform technical support across diverse operating systems while building comprehensive knowledge management resources.",
+      "highlights": [
+        "Provided expert support for macOS, Linux, Windows, and Chrome OS environments",
+        "Developed 25+ knowledge base articles in ServiceNow, reducing repeat incidents by 40%",
+        "Maintained 92% first-call resolution rate across all supported platforms"
+      ]
+    },
+    {
+      "name": "DecisionOne",
+      "location": "Bloomington, MN",
+      "position": "Technical Support Analyst",
+      "startDate": "2017-10",
+      "endDate": "2018-09",
+      "summary": "Managed complex incident resolution using multiple ticketing systems while supporting enterprise software migrations and system integrations.",
+      "highlights": [
+        "Executed Windows 7 to Windows 10 migration for 800+ workstations with 99% success rate",
+        "Utilized ServiceNow, Workfront, and Remedy for comprehensive incident management",
+        "Supported SCCM deployments and SAP CRM implementations across enterprise environment",
+        "Maintained AV infrastructure ensuring 99.5% uptime across corporate facilities"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Western Governors University",
+      "area": "Software Development",
+      "studyType": "Bachelor of Science",
+      "startDate": "2023",
+      "endDate": "Expected 2025",
+      "status": "In Progress - 75% Complete"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "CompTIA A+",
+      "date": "Valid through 2025",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "ITIL Foundations",
+      "date": "2022",
+      "issuer": "AXELOS"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "date": "2023",
+      "issuer": "Amazon Web Services"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Operating Systems",
+      "keywords": [
+        "Windows 10/11",
+        "Windows Server 2016/2019/2022",
+        "macOS",
+        "Linux (Ubuntu, CentOS, RHEL)",
+        "Chrome OS"
+      ]
+    },
+    {
+      "name": "System Management & Deployment",
+      "keywords": [
+        "Microsoft SCCM",
+        "Microsoft Intune (Endpoint Manager)",
+        "Active Directory",
+        "Group Policy",
+        "System Imaging & Deployment",
+        "WSUS"
+      ]
+    },
+    {
+      "name": "Cloud & Productivity Platforms",
+      "keywords": [
+        "Microsoft 365 (Exchange Online, SharePoint, Teams)",
+        "Office 365 Administration",
+        "Azure Active Directory",
+        "AWS (EC2, S3, IAM)"
+      ]
+    },
+    {
+      "name": "ITSM & Ticketing Systems",
+      "keywords": [
+        "ServiceNow (Administration, Workflows, Knowledge Management)",
+        "Remedy",
+        "Workfront"
+      ]
+    },
+    {
+      "name": "Networking & Infrastructure",
+      "keywords": [
+        "LAN/WAN Configuration",
+        "Cisco VPN",
+        "TCP/IP",
+        "DNS/DHCP",
+        "Network Troubleshooting"
+      ]
+    },
+    {
+      "name": "Security & Compliance",
+      "keywords": [
+        "NIST Cybersecurity Framework",
+        "NIST SP 800-88 (Secure Data Sanitization)",
+        "HIPAA Compliance",
+        "Data Security & Privacy"
+      ]
+    },
+    {
+      "name": "Development & Scripting",
+      "keywords": [
+        "PowerShell",
+        "Bash Scripting",
+        "SQL (Basic)",
+        "Python (Learning)",
+        "Automation Scripts"
+      ]
+    }
+  ]
+}
