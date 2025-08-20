@@ -1,447 +1,1044 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jetoine Mathurin - IT Professional</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 300;
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .content {
-            padding: 30px;
-        }
-        
-        .section {
-            margin-bottom: 35px;
-        }
-        
-        .section h2 {
-            color: #2c3e50;
-            font-size: 1.4em;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #3498db;
-        }
-        
-        .summary {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 6px;
-            border-left: 4px solid #3498db;
-            margin-bottom: 30px;
-        }
-        
-        .job {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .job:last-child {
-            border-bottom: none;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            color: #2c3e50;
-            font-size: 1.1em;
-        }
-        
-        .company {
-            color: #3498db;
-            font-weight: 600;
-        }
-        
-        .location-date {
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        .job-summary {
-            margin: 10px 0;
-            color: #555;
-            font-style: italic;
-        }
-        
-        .highlights {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .highlights li {
-            margin: 6px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-        
-        .highlights li:before {
-            content: "▸";
-            color: #3498db;
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        
-        .skill-category {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 6px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .skill-category h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1em;
-        }
-        
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
-        
-        .skill-tag {
-            background: #3498db;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
-        }
-        
-        .education-item, .cert-item {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        
-        .degree, .cert-name {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .institution, .cert-issuer {
-            color: #3498db;
-        }
-        
-        .status {
-            color: #27ae60;
-            font-weight: 600;
-        }
-        
-        @media (max-width: 768px) {
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jetoine Mathurin - IT Professional</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                background: #f8f9fa;
+                padding: 20px;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background: white;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            .header {
+                background: linear-gradient(135deg, #2c3e50, #3498db);
+                color: white;
+                padding: 40px 30px 60px;
+                text-align: center;
+                position: relative;
+                min-height: 250px;
+            }
+
+            .header h1 {
+                font-size: 2.5em;
+                margin-bottom: 80px;
+                font-weight: 300;
+            }
+
             .contact-info {
-                flex-direction: column;
-                gap: 10px;
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                flex-wrap: wrap;
             }
-            
+
+            .contact-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .contact-item a {
+                color: white;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                padding: 8px 12px;
+                border-radius: 4px;
+                border: 1px solid transparent;
+            }
+
+            .contact-item a:hover {
+                background: rgba(255,255,255,0.2);
+                border-color: rgba(255,255,255,0.3);
+                transform: translateY(-2px);
+            }
+
+            /* Blur effects for email and phone */
+            .contact-blur {
+                filter: blur(3px);
+                transition: filter 0.3s ease;
+            }
+
+            .contact-blur:hover {
+                filter: blur(0px);
+            }
+
+            .contact-location {
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 12px;
+            }
+
+            .content {
+                padding: 30px;
+            }
+
+            .section {
+                margin-bottom: 35px;
+            }
+
+            .section h2 {
+                color: #2c3e50;
+                font-size: 1.4em;
+                margin-bottom: 15px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #3498db;
+            }
+
+            .summary {
+                background: #f8f9fa;
+                padding: 20px;
+                border-radius: 6px;
+                border-left: 4px solid #3498db;
+                margin-bottom: 30px;
+            }
+
+            .job {
+                margin-bottom: 25px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .job:last-child {
+                border-bottom: none;
+            }
+
             .job-header {
-                flex-direction: column;
-                gap: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 10px;
+                flex-wrap: wrap;
             }
-            
+
+            .job-title {
+                font-weight: bold;
+                color: #2c3e50;
+                font-size: 1.1em;
+            }
+
+            .company {
+                color: #3498db;
+                font-weight: 600;
+            }
+
+            .location-date {
+                color: #666;
+                font-size: 0.9em;
+            }
+
+            .job-summary {
+                margin: 10px 0;
+                color: #555;
+                font-style: italic;
+            }
+
+            .highlights {
+                list-style: none;
+                padding: 0;
+            }
+
+            .highlights li {
+                margin: 6px 0;
+                padding-left: 20px;
+                position: relative;
+            }
+
+            .highlights li:before {
+                content: "▸";
+                color: #3498db;
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+            }
+
             .skills-grid {
-                grid-template-columns: 1fr;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
             }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Jetoine Mathurin</h1>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>📧</span>
-                    <span>jetrois@pm.me</span>
+
+            .skill-category {
+                background: #f8f9fa;
+                padding: 15px;
+                border-radius: 6px;
+                border-left: 4px solid #3498db;
+            }
+
+            .skill-category h3 {
+                color: #2c3e50;
+                margin-bottom: 10px;
+                font-size: 1em;
+            }
+
+            .skill-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+            }
+
+            .skill-tag {
+                background: #3498db;
+                color: white;
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-size: 0.8em;
+            }
+
+            .education-item, .cert-item {
+                background: #f8f9fa;
+                padding: 15px;
+                border-radius: 6px;
+                margin-bottom: 10px;
+            }
+
+            .degree, .cert-name {
+                font-weight: bold;
+                color: #2c3e50;
+            }
+
+            .institution, .cert-issuer {
+                color: #3498db;
+            }
+
+            .status {
+                color: #27ae60;
+                font-weight: 600;
+            }
+
+            /* Navigation Styles */
+            .nav-menu {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: rgba(52, 152, 219, 0.95);
+                border-radius: 8px;
+                padding: 10px;
+                z-index: 1000;
+                backdrop-filter: blur(10px);
+            }
+
+            .nav-menu ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-menu li {
+                margin: 5px 0;
+            }
+
+            .nav-menu a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 4px;
+                display: block;
+                transition: all 0.3s ease;
+                font-size: 0.9em;
+            }
+
+            .nav-menu a:hover {
+                background: rgba(255,255,255,0.2);
+                transform: translateX(-5px);
+            }
+
+            /* Smooth Scrolling */
+            html {
+                scroll-behavior: smooth;
+            }
+
+            /* Job Title Hover Effects */
+            .job-title {
+                font-weight: bold;
+                color: #2c3e50;
+                font-size: 1.1em;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                position: relative;
+            }
+
+            .job-title:hover {
+                color: #3498db;
+                transform: translateX(5px);
+            }
+
+            .job-title:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: -2px;
+                left: 0;
+                background-color: #3498db;
+                transition: width 0.3s ease;
+            }
+
+            .job-title:hover:after {
+                width: 100%;
+            }
+
+            /* Expandable Skills */
+            .skill-category {
+                background: #f8f9fa;
+                padding: 15px;
+                border-radius: 6px;
+                border-left: 4px solid #3498db;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .skill-category:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+
+            .skill-category.expanded {
+                border-left-width: 8px;
+            }
+
+            .skill-details {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                margin-top: 10px;
+                font-size: 0.9em;
+                color: #666;
+            }
+
+            .skill-details.show {
+                max-height: 200px;
+            }
+
+            /* Progress Bar Styles */
+            .progress-container {
+                margin-top: 10px;
+            }
+
+            .progress-bar {
+                width: 100%;
+                height: 8px;
+                background: #e0e0e0;
+                border-radius: 4px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .progress-fill {
+                height: 100%;
+                background: linear-gradient(90deg, #3498db, #2980b9);
+                border-radius: 4px;
+                transition: width 1s ease-in-out;
+                position: relative;
+            }
+
+            .progress-fill:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
+                animation: shimmer 2s infinite;
+            }
+
+            @keyframes shimmer {
+                0% { transform: translateX(-20px); }
+                100% { transform: translateX(20px); }
+            }
+
+            .progress-text {
+                font-size: 0.8em;
+                color: #666;
+                margin-top: 5px;
+            }
+
+            /* Print Styles */
+            @media print {
+                .nav-menu {
+                    display: none !important;
+                }
+
+                .header {
+                    background: white !important;
+                    color: #333 !important;
+                    -webkit-print-color-adjust: exact;
+                }
+
+                body {
+                    background: white !important;
+                    font-size: 12pt;
+                    line-height: 1.4;
+                }
+
+                .container {
+                    box-shadow: none !important;
+                    border-radius: 0 !important;
+                    max-width: none !important;
+                    margin: 0 !important;
+                }
+
+                .content {
+                    padding: 20px !important;
+                }
+
+                .section {
+                    page-break-inside: avoid;
+                    margin-bottom: 20px !important;
+                }
+
+                .job {
+                    page-break-inside: avoid;
+                    margin-bottom: 15px !important;
+                }
+
+                .skill-category {
+                    background: #f5f5f5 !important;
+                    border: 1px solid #ddd !important;
+                    page-break-inside: avoid;
+                }
+
+                .progress-bar {
+                    border: 1px solid #ccc !important;
+                }
+
+                .progress-fill {
+                    background: #333 !important;
+                }
+
+                a {
+                    color: #333 !important;
+                    text-decoration: underline !important;
+                }
+            }
+                .contact-info {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .job-header {
+                    flex-direction: column;
+                    gap: 5px;
+                }
+
+                .skills-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </nav>
+
+            <div class="header">
+                <h1>Jetoine Mathurin</h1>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="mailto:jetrois@pm.me" class="contact-blur">
+                            <span>📧</span>
+                            <span>jetrois@pm.me</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="tel:+13055907847" class="contact-blur">
+                            <span>📱</span>
+                            <span>(305) 590-7847</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-location">
+                            <span>📍</span>
+                            <span>Minneapolis, MN</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <span>📱</span>
-                    <span>(305) 590-7847</span>
+            </div>
+
+            <div class="content">
+                <div class="summary" id="summary">
+                    <strong>Results-driven IT professional</strong> with 8+
+                    years of experience delivering enterprise-level systems and
+                    network support. Proven expertise in Microsoft ecosystem
+                    management, ServiceNow implementations, and federal
+                    compliance standards. Specialized in streamlining IT
+                    operations through automation and process optimization, with
+                    a track record of reducing system deployment times and
+                    improving user satisfaction across diverse environments.
                 </div>
-                <div class="contact-item">
-                    <span>📍</span>
-                    <span>Minneapolis, MN</span>
+
+                <div class="section" id="experience">
+                    <h2>Professional Experience</h2>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">IT Consultant</div>
+                                <div class="company">
+                                    Digital Alchemy Labs Inc
+                                </div>
+                            </div>
+                            <div class="location-date">
+                                Minneapolis, MN | July 2023 - Present
+                            </div>
+                        </div>
+                        <div class="job-summary">
+                            Led comprehensive IT infrastructure projects
+                            including system provisioning, security compliance,
+                            and technical support operations for enterprise
+                            clients.
+                        </div>
+                        <ul class="highlights">
+                            <li>
+                                Orchestrated deployment of 150+ Windows systems
+                                using Intune and SCCM, achieving 99% success
+                                rate
+                            </li>
+                            <li>
+                                Executed secure decommissioning procedures
+                                following NIST SP 800-88 standards for 200+
+                                devices
+                            </li>
+                            <li>
+                                Delivered hybrid on-site and remote support,
+                                maintaining 95% client satisfaction rating
+                            </li>
+                            <li>
+                                Streamlined incident management workflows
+                                through ServiceNow optimization, reducing
+                                resolution time by 30%
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">
+                                    POS/Mobility Technical Support
+                                </div>
+                                <div class="company">Target Corporation</div>
+                            </div>
+                            <div class="location-date">
+                                Brooklyn Park, MN | Dec 2022 - June 2023
+                            </div>
+                        </div>
+                        <div class="job-summary">
+                            Provided critical technical support for
+                            point-of-sale systems and mobile devices across
+                            retail operations, ensuring minimal downtime during
+                            peak business periods.
+                        </div>
+                        <ul class="highlights">
+                            <li>
+                                Resolved 95% of ServiceNow incidents within SLA
+                                timeframes, supporting 500+ retail locations
+                                across america
+                            </li>
+                            <li>
+                                Performed comprehensive diagnostics and
+                                assessments, reducing device replacement costs
+                                by 25%
+                            </li>
+                            <li>
+                                Developed troubleshooting documentation that
+                                decreased average ticket resolution time by 20%
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">
+                                    Technology Integration Analyst
+                                </div>
+                                <div class="company">Perkins & Will</div>
+                            </div>
+                            <div class="location-date">
+                                Minneapolis, MN | June 2022 - Sep 2022
+                            </div>
+                        </div>
+                        <div class="job-summary">
+                            Managed technology integration projects for
+                            architectural firm, focusing on AV systems,
+                            workstation deployment, and process documentation.
+                        </div>
+                        <ul class="highlights">
+                            <li>
+                                Deployed and configured 80+ workstations with
+                                standardized imaging protocols
+                            </li>
+                            <li>
+                                Integrated AV systems across 12 conference
+                                rooms, improving collaboration efficiency by 35%
+                            </li>
+                            <li>
+                                Created comprehensive ServiceNow documentation
+                                workflows, reducing onboarding time for new
+                                technicians by 50%
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">
+                                    Technical Support Analyst
+                                </div>
+                                <div class="company">Medica</div>
+                            </div>
+                            <div class="location-date">
+                                Minnetonka, MN | Nov 2021 - Mar 2022
+                            </div>
+                        </div>
+                        <div class="job-summary">
+                            Supported critical healthcare IT infrastructure
+                            including Windows/Linux environments, Microsoft 365,
+                            and Active Directory services while maintaining
+                            HIPAA compliance.
+                        </div>
+                        <ul class="highlights">
+                            <li>
+                                Successfully led Skype for Business to Microsoft
+                                Teams migration for 1,200+ users with zero data
+                                loss
+                            </li>
+                            <li>
+                                Maintained 99.8% system uptime across hybrid
+                                Windows/Linux environments
+                            </li>
+                            <li>
+                                Streamlined Active Directory user provisioning
+                                processes, reducing account creation time by 15%
+                            </li>
+                            <li>
+                                Ensured HIPAA compliance across all technical
+                                support activities
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">
+                                    Logistics Project Coordinator
+                                </div>
+                                <div class="company">Comm-Works</div>
+                            </div>
+                            <div class="location-date">
+                                Plymouth, MN | Aug 2019 - Nov 2021
+                            </div>
+                        </div>
+                        <div class="job-summary">
+                            Coordinated large-scale hardware deployment projects
+                            and logistics operations while maintaining detailed
+                            project tracking and documentation.
+                        </div>
+                        <ul class="highlights">
+                            <li>
+                                Configured and deployed 300+ POS systems and
+                                Cisco networking equipment across multiple
+                                locations
+                            </li>
+                            <li>
+                                Managed project timelines through ServiceNow,
+                                achieving 98% on-time delivery rate
+                            </li>
+                            <li>
+                                Created standardized configuration procedures,
+                                reducing setup time per device by 10%
+                            </li>
+                            <li>
+                                Coordinated cross-functional teams to ensure
+                                seamless hardware rollouts
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">
+                                    Technical Support Analyst
+                                </div>
+                                <div class="company">DRC</div>
+                            </div>
+                            <div class="location-date">
+                                Plymouth, MN | Sep 2018 - May 2019
+                            </div>
+                        </div>
+                        <ul class="highlights">
+                            <li>
+                                Provided expert support for macOS, Linux,
+                                Windows, and Chrome OS environments
+                            </li>
+                            <li>
+                                Developed 25+ knowledge base articles in
+                                ServiceNow, reducing repeat incidents by 40%
+                            </li>
+                            <li>
+                                Maintained 92% first-call resolution rate across
+                                all supported platforms
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div>
+                                <div class="job-title">
+                                    Technical Support Analyst
+                                </div>
+                                <div class="company">DecisionOne</div>
+                            </div>
+                            <div class="location-date">
+                                Bloomington, MN | Oct 2017 - Sep 2018
+                            </div>
+                        </div>
+                        <ul class="highlights">
+                            <li>
+                                Executed Windows 7 to Windows 10 migration for
+                                800+ workstations with 99% success rate
+                            </li>
+                            <li>
+                                Utilized ServiceNow, Workfront, and Remedy for
+                                comprehensive incident management
+                            </li>
+                            <li>
+                                Supported SCCM deployments and SAP CRM
+                                implementations across enterprise environment
+                            </li>
+                            <li>
+                                Maintained AV infrastructure ensuring 99.5%
+                                uptime across corporate facilities
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section" id="skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category" onclick="toggleSkill(this)">
+                            <h3>Operating Systems ▼</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Windows 10/11</span>
+                                <span class="skill-tag">Windows Server</span>
+                                <span class="skill-tag">macOS</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Chrome OS</span>
+                            </div>
+                            <div class="skill-details">
+                                <p>
+                                    <strong>Advanced:</strong> Windows 10/11,
+                                    Windows Server 2016/2019/2022
+                                </p>
+                                <p>
+                                    <strong>Advanced:</strong> macOS
+                                    administration, Linux (Ubuntu, CentOS, RHEL)
+                                </p>
+                                <p>
+                                    <strong>Proficient:</strong> Chrome OS
+                                    enterprise management
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-category" onclick="toggleSkill(this)">
+                            <h3>System Management ▼</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SCCM</span>
+                                <span class="skill-tag">Intune</span>
+                                <span class="skill-tag">Active Directory</span>
+                                <span class="skill-tag">Group Policy</span>
+                                <span class="skill-tag">WSUS</span>
+                            </div>
+                            <div class="skill-details">
+                                <p>
+                                    <strong>Advanced:</strong> SCCM deployment,
+                                    Intune device management
+                                </p>
+                                <p>
+                                    <strong>Advanced:</strong> Active Directory
+                                    administration, Group Policy design
+                                </p>
+                                <p>
+                                    <strong>Proficient:</strong> WSUS
+                                    management, PowerShell automation
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-category" onclick="toggleSkill(this)">
+                            <h3>Cloud Platforms ▼</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Microsoft 365</span>
+                                <span class="skill-tag">Azure AD</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Office 365</span>
+                            </div>
+                            <div class="skill-details">
+                                <p>
+                                    <strong>Advanced:</strong> Microsoft 365
+                                    administration, Exchange Online
+                                </p>
+                                <p>
+                                    <strong>Advanced:</strong> Azure Active
+                                    Directory, Office 365 migrations
+                                </p>
+                                <p>
+                                    <strong>Certified:</strong> AWS Cloud
+                                    Practitioner - EC2, S3, IAM basics
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-category" onclick="toggleSkill(this)">
+                            <h3>ITSM & Ticketing ▼</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">ServiceNow</span>
+                                <span class="skill-tag">Remedy</span>
+                                <span class="skill-tag">Workfront</span>
+                            </div>
+                            <div class="skill-details">
+                                <p>
+                                    <strong>Advanced:</strong> ServiceNow
+                                    administration, workflow design
+                                </p>
+                                <p>
+                                    <strong>Advanced:</strong> Incident
+                                    management, knowledge base creation
+                                </p>
+                                <p>
+                                    <strong>Proficient:</strong> Remedy
+                                    ticketing, Workfront project management
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-category" onclick="toggleSkill(this)">
+                            <h3>Security & Compliance ▼</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">NIST Framework</span>
+                                <span class="skill-tag">HIPAA</span>
+                                <span class="skill-tag">Data Security</span>
+                            </div>
+                            <div class="skill-details">
+                                <p>
+                                    <strong>Advanced:</strong> NIST SP 800-88
+                                    secure data sanitization
+                                </p>
+                                <p>
+                                    <strong>Advanced:</strong> HIPAA compliance,
+                                    federal IT standards
+                                </p>
+                                <p>
+                                    <strong>Proficient:</strong> Security
+                                    auditing, compliance documentation
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="skill-category" onclick="toggleSkill(this)">
+                            <h3>Scripting & Development ▼</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PowerShell</span>
+                                <span class="skill-tag">Bash</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Python</span>
+                            </div>
+                            <div class="skill-details">
+                                <p>
+                                    <strong>Proficient:</strong> PowerShell
+                                    automation, system administration scripts
+                                </p>
+                                <p>
+                                    <strong>Proficient:</strong> Bash scripting,
+                                    SQL queries for reporting
+                                </p>
+                                <p>
+                                    <strong>Learning:</strong> Python for
+                                    automation and data analysis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="education">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <div class="degree">
+                            Bachelor of Science in Software Development
+                        </div>
+                        <div class="institution">
+                            Western Governors University
+                        </div>
+                        <div class="status">In Progress - Expected 2025</div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div
+                                    class="progress-fill"
+                                    style="width: 0%"
+                                    data-width="80"
+                                ></div>
+                            </div>
+                            <div class="progress-text">
+                                80% Complete - Focusing on software engineering
+                                principles and mobile development
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" id="certifications">
+                    <h2>Certifications</h2>
+                    <div class="cert-item">
+                        <div class="cert-name">CompTIA A+</div>
+                        <div class="cert-issuer">
+                            CompTIA | Valid through 2025
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">
+                            AWS Certified Cloud Practitioner
+                        </div>
+                        <div class="cert-issuer">
+                            Amazon Web Services | 2023
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">ITIL Foundations v4</div>
+                        <div class="cert-issuer">AXELOS | 2022</div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="content">
-            <div class="summary">
-                <strong>Results-driven IT professional</strong> with 8+ years of experience delivering enterprise-level systems and network support. Proven expertise in Microsoft ecosystem management, ServiceNow implementations, and federal compliance standards. Specialized in streamlining IT operations through automation and process optimization, with a track record of reducing system deployment times and improving user satisfaction across diverse environments.
-            </div>
-            
-            <div class="section">
-                <h2>Professional Experience</h2>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">IT Consultant</div>
-                            <div class="company">Digital Alchemy Labs Inc</div>
-                        </div>
-                        <div class="location-date">Minneapolis, MN | July 2023 - Present</div>
-                    </div>
-                    <div class="job-summary">Led comprehensive IT infrastructure projects including system provisioning, security compliance, and technical support operations for enterprise clients.</div>
-                    <ul class="highlights">
-                        <li>Orchestrated deployment of 150+ Windows systems using Intune and SCCM, achieving 99% success rate</li>
-                        <li>Executed secure decommissioning procedures following NIST SP 800-88 standards for 200+ devices</li>
-                        <li>Delivered hybrid on-site and remote support, maintaining 95% client satisfaction rating</li>
-                        <li>Streamlined incident management workflows through ServiceNow optimization, reducing resolution time by 30%</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">POS/Mobility Technical Support</div>
-                            <div class="company">Target Corporation</div>
-                        </div>
-                        <div class="location-date">Brooklyn Park, MN | Dec 2022 - June 2023</div>
-                    </div>
-                    <div class="job-summary">Provided critical technical support for point-of-sale systems and mobile devices across retail operations, ensuring minimal downtime during peak business periods.</div>
-                    <ul class="highlights">
-                        <li>Resolved 95% of ServiceNow incidents within SLA timeframes, supporting 500+ retail devices</li>
-                        <li>Performed comprehensive diagnostics and assessments, reducing device replacement costs by 25%</li>
-                        <li>Developed troubleshooting documentation that decreased average ticket resolution time by 40%</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Technology Integration Analyst</div>
-                            <div class="company">Perkins & Will</div>
-                        </div>
-                        <div class="location-date">Minneapolis, MN | June 2022 - Sep 2022</div>
-                    </div>
-                    <div class="job-summary">Managed technology integration projects for architectural firm, focusing on AV systems, workstation deployment, and process documentation.</div>
-                    <ul class="highlights">
-                        <li>Deployed and configured 80+ workstations with standardized imaging protocols</li>
-                        <li>Integrated AV systems across 12 conference rooms, improving collaboration efficiency by 35%</li>
-                        <li>Created comprehensive ServiceNow documentation workflows, reducing onboarding time for new technicians by 50%</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Technical Support Analyst</div>
-                            <div class="company">Medica</div>
-                        </div>
-                        <div class="location-date">Minnetonka, MN | Nov 2021 - Mar 2022</div>
-                    </div>
-                    <div class="job-summary">Supported critical healthcare IT infrastructure including Windows/Linux environments, Microsoft 365, and Active Directory services while maintaining HIPAA compliance.</div>
-                    <ul class="highlights">
-                        <li>Successfully led Skype for Business to Microsoft Teams migration for 1,200+ users with zero data loss</li>
-                        <li>Maintained 99.8% system uptime across hybrid Windows/Linux environments</li>
-                        <li>Streamlined Active Directory user provisioning processes, reducing account creation time by 60%</li>
-                        <li>Ensured HIPAA compliance across all technical support activities</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Logistics Project Coordinator</div>
-                            <div class="company">Comm-Works</div>
-                        </div>
-                        <div class="location-date">Plymouth, MN | Aug 2019 - Nov 2021</div>
-                    </div>
-                    <div class="job-summary">Coordinated large-scale hardware deployment projects and logistics operations while maintaining detailed project tracking and documentation.</div>
-                    <ul class="highlights">
-                        <li>Configured and deployed 300+ POS systems and Cisco networking equipment across multiple locations</li>
-                        <li>Managed project timelines through ServiceNow, achieving 98% on-time delivery rate</li>
-                        <li>Created standardized configuration procedures, reducing setup time per device by 45%</li>
-                        <li>Coordinated cross-functional teams to ensure seamless hardware rollouts</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Technical Support Analyst</div>
-                            <div class="company">DRC</div>
-                        </div>
-                        <div class="location-date">Plymouth, MN | Sep 2018 - May 2019</div>
-                    </div>
-                    <ul class="highlights">
-                        <li>Provided expert support for macOS, Linux, Windows, and Chrome OS environments</li>
-                        <li>Developed 25+ knowledge base articles in ServiceNow, reducing repeat incidents by 40%</li>
-                        <li>Maintained 92% first-call resolution rate across all supported platforms</li>
-                    </ul>
-                </div>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">Technical Support Analyst</div>
-                            <div class="company">DecisionOne</div>
-                        </div>
-                        <div class="location-date">Bloomington, MN | Oct 2017 - Sep 2018</div>
-                    </div>
-                    <ul class="highlights">
-                        <li>Executed Windows 7 to Windows 10 migration for 800+ workstations with 99% success rate</li>
-                        <li>Utilized ServiceNow, Workfront, and Remedy for comprehensive incident management</li>
-                        <li>Supported SCCM deployments and SAP CRM implementations across enterprise environment</li>
-                        <li>Maintained AV infrastructure ensuring 99.5% uptime across corporate facilities</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Operating Systems</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Windows 10/11</span>
-                            <span class="skill-tag">Windows Server</span>
-                            <span class="skill-tag">macOS</span>
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Chrome OS</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>System Management</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">SCCM</span>
-                            <span class="skill-tag">Intune</span>
-                            <span class="skill-tag">Active Directory</span>
-                            <span class="skill-tag">Group Policy</span>
-                            <span class="skill-tag">WSUS</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Cloud Platforms</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Microsoft 365</span>
-                            <span class="skill-tag">Azure AD</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Office 365</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>ITSM & Ticketing</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">ServiceNow</span>
-                            <span class="skill-tag">Remedy</span>
-                            <span class="skill-tag">Workfront</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Security & Compliance</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">NIST Framework</span>
-                            <span class="skill-tag">HIPAA</span>
-                            <span class="skill-tag">Data Security</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Scripting & Development</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">PowerShell</span>
-                            <span class="skill-tag">Bash</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <div class="degree">Bachelor of Science in Software Development</div>
-                    <div class="institution">Western Governors University</div>
-                    <div class="status">In Progress - Expected 2025 (80% Complete)</div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2>Certifications</h2>
-                <div class="cert-item">
-                    <div class="cert-name">CompTIA A+</div>
-                    <div class="cert-issuer">CompTIA | Valid through 2025</div>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-name">AWS Certified Cloud Practitioner</div>
-                    <div class="cert-issuer">Amazon Web Services | 2023</div>
-                </div>
-                <div class="cert-item">
-                    <div class="cert-name">ITIL Foundations</div>
-                    <div class="cert-issuer">AXELOS | 2022</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+
+        <script>
+            // Toggle expandable skills
+            function toggleSkill(element) {
+                const details = element.querySelector(".skill-details");
+                const header = element.querySelector("h3");
+
+                element.classList.toggle("expanded");
+                details.classList.toggle("show");
+
+                // Toggle arrow direction
+                if (header.textContent.includes("▼")) {
+                    header.textContent = header.textContent.replace("▼", "▲");
+                } else {
+                    header.textContent = header.textContent.replace("▲", "▼");
+                }
+            }
+
+            // Animate progress bars on scroll
+            function animateProgressBars() {
+                const progressBars =
+                    document.querySelectorAll(".progress-fill");
+
+                progressBars.forEach((bar) => {
+                    const rect = bar.getBoundingClientRect();
+                    const isVisible =
+                        rect.top < window.innerHeight && rect.bottom > 0;
+
+                    if (isVisible && !bar.classList.contains("animated")) {
+                        const targetWidth = bar.getAttribute("data-width");
+                        setTimeout(() => {
+                            bar.style.width = targetWidth + "%";
+                            bar.classList.add("animated");
+                        }, 500);
+                    }
+                });
+            }
+
+            // Initialize animations
+            document.addEventListener("DOMContentLoaded", function () {
+                // Initial progress bar animation
+                setTimeout(animateProgressBars, 1000);
+
+                // Progress bar animation on scroll
+                window.addEventListener("scroll", animateProgressBars);
+
+                // Add smooth scrolling for navigation
+                document.querySelectorAll(".nav-menu a").forEach((link) => {
+                    link.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute("href").substring(1);
+                        const targetElement = document.getElementById(targetId);
+
+                        if (targetElement) {
+                            const offsetTop = targetElement.offsetTop - 80;
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: "smooth",
+                            });
+                        }
+                    });
+                });
+
+                // Highlight active navigation
+                window.addEventListener("scroll", function () {
+                    const sections =
+                        document.querySelectorAll(".section, .summary");
+                    const navLinks = document.querySelectorAll(".nav-menu a");
+
+                    let current = "";
+                    sections.forEach((section) => {
+                        const sectionTop = section.offsetTop - 100;
+                        if (window.pageYOffset >= sectionTop) {
+                            current = section.getAttribute("id");
+                        }
+                    });
+
+                    navLinks.forEach((link) => {
+                        link.style.background = "";
+                        if (
+                            link.getAttribute("href").substring(1) === current
+                        ) {
+                            link.style.background = "rgba(255,255,255,0.3)";
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
 </html>
